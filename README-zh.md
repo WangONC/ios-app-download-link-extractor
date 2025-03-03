@@ -34,6 +34,12 @@
 ## 反馈
 - 如果您在使用过程中遇到问题或有改进建议，请前往 [GitHub Issues](https://github.com/WangONC/ios-app-download-link-extractor/issues) 提交反馈（但不一定修复）。
 
+## 更新日志
+- **v0.7**
+ - 初始版本：基本功能完成
+ - 添加页面动态监控
+ - 添加基本错误显示，优化错误显示格式
+
 ---
 
 **作者**：WangONC  
