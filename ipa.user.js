@@ -1,14 +1,12 @@
 // ==UserScript==
 // @name                iOS App Download Link Extractor
 // @namespace           https://github.com/WangONC/ios-app-download-link-extractor
-// @version             0.7.6
+// @version             0.8.0
 // @description         Extracts the IPA download link from itms-services URLs or displays an error message, shown next to the original button.
 // @author              WangONC
 // @source              https://github.com/WangONC/ios-app-download-link-extractor
 // @match               *://*/*
 // @grant               GM.xmlHttpRequest
-// @downloadURL https://raw.githubusercontent.com/WangONC/ios-app-download-link-extractor/main/ipa.user.js
-// @updateURL https://raw.githubusercontent.com/WangONC/ios-app-download-link-extractor/main/ipa.user.js
 // @license             MIT
 
 // @name:en             iOS App Download Link Extractor
@@ -91,6 +89,8 @@
 // @description:ug      itms-services URL لىرىدىن IPA چۈشۈرۈش ئۇلىنىشىنى چىقىرىپ ياكى ئەسلى كۇنۇپكا يېنىدا خاتالىق ئۇچۇرىنى كۆرسىتىدۇ
 // @name:vi             Trích xuất liên kết tải xuống ứng dụng iOS
 // @description:vi      Trích xuất liên kết tải IPA từ URL itms-services hoặc hiển thị thông báo lỗi bên cạnh nút gốc
+// @downloadURL https://update.greasyfork.org/scripts/528616/IPA%E6%8F%90%E5%8F%96%E5%8A%A9%E6%89%8B.user.js
+// @updateURL https://update.greasyfork.org/scripts/528616/IPA%E6%8F%90%E5%8F%96%E5%8A%A9%E6%89%8B.meta.js
 // ==/UserScript==
  
 (function() {
@@ -105,10 +105,18 @@
         }
  
         for (let link of links) {
-            // 检查是否已经处理过该链接
-            if (link.nextElementSibling && (link.nextElementSibling.classList.contains('download-link') || link.nextElementSibling.classList.contains('error-link'))) {
+            // 检查新添加的链接
+            if (link.nextElementSibling && (link.nextElementSibling.classList.contains('ipa-download-link') || link.nextElementSibling.classList.contains('ipa-error-link'))) {
                 continue;
             }
+
+            // 检查是否是已经处理过的链接
+            if (link.getAttribute('ipa-data-processed') === 'true') {
+                continue;
+            }
+
+            // 标记该链接为已处理
+            link.setAttribute('ipa-data-processed', 'true');
  
             try {
                 let href = link.href;
@@ -136,7 +144,7 @@
                                 downloadLink.target = '_blank'; // 新窗口打开，方便下载
                                 downloadLink.textContent = 'Download IPA';
                                 downloadLink.style.marginLeft = '13px';
-                                downloadLink.classList.add('download-link'); // 添加类名以便识别
+                                downloadLink.classList.add('ipa-download-link'); // 添加类名以便识别
                                 link.insertAdjacentElement('afterend', downloadLink);
                             } else {
                                 showError(link, 'Unable to parse plist file');
@@ -198,7 +206,7 @@
         errorLink.style.color = 'red';
         errorLink.style.marginLeft = '13px';
         errorLink.style.pointerEvents = 'none'; // 防止点击
-        errorLink.classList.add('error-link'); // 添加类名以便识别
+        errorLink.classList.add('ipa-error-link'); // 添加类名以便识别
         link.insertAdjacentElement('afterend', errorLink);
     }
  
