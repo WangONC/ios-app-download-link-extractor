@@ -26,6 +26,12 @@ For more details, check the [中文 README](https://github.com/WangONC/ios-app-d
 ## Feedback
 Submit issues or suggestions on [GitHub Issues](https://github.com/WangONC/ios-app-download-link-extractor/issues).
 
+## Changelog
+- **v0.7**
+ - Initial version: Basic functionality completed.
+ - Added dynamic page monitoring.
+ - Added basic error display and optimized error display format.
+
 ---
 
 **Author**: WangONC  
