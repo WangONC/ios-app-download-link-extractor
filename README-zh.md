@@ -16,6 +16,10 @@
      - [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
 
 2. **添加脚本**：
+   - 选择以下的方式之一安装    
+      - 点击[![Install/Update](https://img.shields.io/badge/Install%2FUpdate-blue?style=flat)](https://raw.githubusercontent.com/WangONC/ios-app-download-link-extractor/main/ipa.user.js)安装或者更新脚本
+      - 从[Greasy Fork](https://greasyfork.org/zh-CN/scripts/528616-ios-app-download-link-extractor)进行安装
+
 
 
 ## 使用说明
