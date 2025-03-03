@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name                iOS App Download Link Extractor
 // @namespace           https://github.com/WangONC/ios-app-download-link-extractor
-// @version             0.7.5
+// @version             0.7.6
 // @description         Extracts the IPA download link from itms-services URLs or displays an error message, shown next to the original button.
 // @author              WangONC
 // @source              https://github.com/WangONC/ios-app-download-link-extractor
 // @match               *://*/*
 // @grant               GM.xmlHttpRequest
+// @downloadURL https://raw.githubusercontent.com/WangONC/ios-app-download-link-extractor/main/ipa.user.js
+// @updateURL https://raw.githubusercontent.com/WangONC/ios-app-download-link-extractor/main/ipa.user.js
 // @license             MIT
 
 // @name:en             iOS App Download Link Extractor
