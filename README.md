@@ -28,9 +28,9 @@ Submit issues or suggestions on [GitHub Issues](https://github.com/WangONC/ios-a
 
 ## Changelog
 - **v0.7**
- - Initial version: Basic functionality completed.
- - Added dynamic page monitoring.
- - Added basic error display and optimized error display format.
+  - Initial version: Basic functionality completed.
+  - Added dynamic page monitoring.
+  - Added basic error display and optimized error display format.
 
 ---
 
