@@ -37,6 +37,9 @@ Submit issues or suggestions on [GitHub Issues](https://github.com/WangONC/ios-a
   - Initial version: Basic functionality completed.
   - Added dynamic page monitoring.
   - Added basic error display and optimized error display format.
+- **​v0.8.0**
+  - Modified the existing new connection class to prevent confusion
+  - Fixed the issue of duplicate link additions caused by DOM monitoring
 
 ---
 
