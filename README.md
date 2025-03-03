@@ -13,6 +13,7 @@ For more details, check the [中文 README](https://github.com/WangONC/ios-app-d
 
 ## Installation
 1. Install [Tampermonkey](https://www.tampermonkey.net/) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/).
+2. Click [![Install/Update](https://img.shields.io/badge/Install%2FUpdate-blue?style=flat)](https://raw.githubusercontent.com/WangONC/ios-app-download-link-extractor/main/ipa.user.js) to add it to Tampermonkey or Greasemonkey.
 
 ## Usage
 - Visit a page with `itms-services` links.
