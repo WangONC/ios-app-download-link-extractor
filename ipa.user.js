@@ -1,12 +1,14 @@
 // ==UserScript==
-// @name:zh             IPA提取助手
 // @name                iOS App Download Link Extractor
+// @name:en             iOS App Download Link Extractor
+// @name:zh-CN          IPA提取助手
 // @name:zh-TW          IPA提取助手
 // @namespace
 // @copyright           2025, WangONC
 // @version             0.7.4
-// @description:zh      从 itms-services 链接中提取 IPA 下载直链或显示错误提示，并显示在原始按钮旁边
 // @description         Extracts the IPA download link from itms-services URLs or displays an error message, shown next to the original button.
+// @description:en      Extracts the IPA download link from itms-services URLs or displays an error message, shown next to the original button.
+// @description:zh-CN   从 itms-services 链接中提取 IPA 下载直链或显示错误提示，并显示在原始按钮旁边
 // @description:zh-TW   從 itms-services 連結中提取 IPA 下載直鍊或顯示錯誤提示，並顯示在原始按鈕旁邊
 // @author              WangONC
 // @source              https://github.com/WangONC/ios-app-download-link-extractor
