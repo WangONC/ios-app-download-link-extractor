@@ -12,8 +12,15 @@ For more details, check the [中文 README](https://github.com/WangONC/ios-app-d
 - Works with dynamically loaded content.
 
 ## Installation
-1. Install [Tampermonkey](https://www.tampermonkey.net/) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/).
-2. Click [![Install/Update](https://img.shields.io/badge/Install%2FUpdate-blue?style=flat)](https://raw.githubusercontent.com/WangONC/ios-app-download-link-extractor/main/ipa.user.js) to add it to Tampermonkey or Greasemonkey.
+1. **Install a User Script Manager**:
+   - If you haven’t installed a user script manager yet, please install one of the following:
+     - [Tampermonkey](https://www.tampermonkey.net/)
+     - [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
+
+2. **Add the Script**:
+   - Choose one of the following methods to install:
+     - Click [![Install/Update](https://img.shields.io/badge/Install%2FUpdate-blue?style=flat)](https://raw.githubusercontent.com/WangONC/ios-app-download-link-extractor/main/ipa.user.js) to install or update the script.
+     - Install from [Greasy Fork](https://greasyfork.org/zh-CN/scripts/528616-ios-app-download-link-extractor).
 
 ## Usage
 - Visit a page with `itms-services` links.
