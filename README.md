@@ -27,8 +27,7 @@ For more details, check the [中文 README](https://github.com/WangONC/ios-app-d
 - The script will add a "Download IPA" link or an error message next to each link.
 
 ## Notes
-- Only works on pages with specific `itms-services` links.
-- Needs a user script manager with `GM.xmlHttpRequest` enabled.
+- Requires a user script manager with `GM.xmlHttpRequest` permission enabled (used to access and parse plist content).
 
 ## Feedback
 Submit issues or suggestions on [GitHub Issues](https://github.com/WangONC/ios-app-download-link-extractor/issues).
