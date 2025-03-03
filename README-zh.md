@@ -1,4 +1,4 @@
-# iOS App Download Link Extractor（iOS 应用下载链接提取器）
+# iOS App Download Link Extractor（IPA提取助手）
 
 ## 概述
 **iOS App Download Link Extractor** 是一个油猴脚本，旨在从网页中的 `itms-services` 链接中提取 iOS 应用的 IPA 下载直链，并将其显示在原始按钮旁边，方便 IPA 文件的下载。
