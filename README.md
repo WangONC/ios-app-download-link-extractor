@@ -1,9 +1,9 @@
 # iOS App Download Link Extractor
 
-[中文 README](https://github.com/WangONC/ios-app-download-link-extractor/blob/main/README-zh.md)
-
 ## Overview
 **iOS App Download Link Extractor** is a Tampermonkey script that extracts direct IPA download links from `itms-services` URLs on web pages and displays them next to the original button. It makes downloading IPA files for iOS apps easier.
+
+For more details, check the [中文 README](https://github.com/WangONC/ios-app-download-link-extractor/blob/main/README-zh.md).
 
 ## Features
 - Automatically detects `itms-services` links.
