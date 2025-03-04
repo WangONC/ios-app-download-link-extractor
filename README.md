@@ -40,6 +40,10 @@ Submit issues or suggestions on [GitHub Issues](https://github.com/WangONC/ios-a
 - **​v0.8.0**
   - Modified the existing new connection class to prevent confusion
   - Fixed the issue of duplicate link additions caused by DOM monitoring
+- **​v0.9.0**​
+  - Added timeout and retry mechanisms for plist requests. The current default timeout is 5 seconds, with 3 retries and a retry interval of 1 second. These settings are not configurable.
+  - Added a listener for the window's load event to improve stability.
+  - Enhanced DOM element monitoring to include attribute changes.
 
 ---
 
